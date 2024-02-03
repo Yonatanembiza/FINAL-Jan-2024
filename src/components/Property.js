@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
+import './styles.css'; // Import the CSS file
 
 const Property = () => {
   const { id } = useParams();

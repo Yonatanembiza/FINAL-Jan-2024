@@ -5,6 +5,8 @@ import Community from './components/Community';
 import Properties from './components/Properties';
 import Property from './components/Property';
 import AddProperty from './components/AddProperty';
+import NotFound from './components/NotFound';
+
 // import Communities from './Communities';
 // import Community from './Community';
 // import Properties from './Properties';
@@ -21,6 +23,7 @@ const App = () => {
         <Route path="/community/:id/properties" element={<Properties />} />
         <Route path="/property/:id" element={<Property />} />
         <Route path="/community/:id/add-property" element={<AddProperty />} />
+        <Route path="*" element={<NotFound />} /> {/* Route for Not Found page */}
       </Routes>
     </Router>
   );
