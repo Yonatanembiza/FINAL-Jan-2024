@@ -1,32 +1,17 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Communities from './components/Communities';
-import Community from './components/Community';
-import Properties from './components/Properties';
-import Property from './components/Property';
-import AddProperty from './components/AddProperty';
-import NotFound from './components/NotFound';
-
-// import Communities from './Communities';
-// import Community from './Community';
-// import Properties from './Properties';
-// import Property from './Property';
-// import AddProperty from './AddProperty';
+import { BrowserRouter as Router } from 'react-router-dom';
+import PageRoutes from './components/PageRoutes';
+// import PageRoutes from './PageRoutes';
 
 const App = () => {
   return (
     <Router>
-      <Routes>
-        <Route path="/" element={<Communities />} />
-        <Route path="/communities" element={<Communities />} />
-        <Route path="/community/:id" element={<Community />} />
-        <Route path="/community/:id/properties" element={<Properties />} />
-        <Route path="/property/:id" element={<Property />} />
-        <Route path="/community/:id/add-property" element={<AddProperty />} />
-        <Route path="*" element={<NotFound />} /> {/* Route for Not Found page */}
-      </Routes>
+      <div>
+        <PageRoutes />
+      </div>
     </Router>
   );
 };
+
 
 export default App;
