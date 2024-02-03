@@ -21,7 +21,7 @@ const PageRoutes = () => {
       <Route path="/community/:id" element={<Community />} />
       <Route path="/community/:id/properties" element={<Properties />} />
       <Route path="/property/:id" element={<Property />} />
-      <Route path="/add-property" element={<AddProperty />} />
+      {/* <Route path="/add-property" element={<AddProperty />} /> */}
       <Route path="/community/:id/add-property" element={<AddProperty />} />
       <Route path="*" element={<NotFound />} />
     </Routes>
