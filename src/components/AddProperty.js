@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { useParams, useNavigate } from 'react-router-dom';
+import { useParams, useNavigate, Link } from 'react-router-dom'; // Import Link
 import './styles.css'; // Import the CSS file
 
 const AddProperty = () => {
@@ -48,6 +48,8 @@ const AddProperty = () => {
       />
       <br />
       <button onClick={handleAddProperty}>Add Property</button>
+      {/* Back button using Link */}
+      <Link to={`/community/${id}/properties`}>Back</Link>
     </div>
   );
 };
